@@ -1,4 +1,5 @@
 @use "./colors" as *;
+
 @mixin burgerBtn {
   position: absolute;
   right: 0;
@@ -6,4 +7,10 @@
   content: "";
   background-color: $pure-white;
   transition: width 0.3s;
+}
+@mixin heroImages($bgImg) {
+  background-image: $blue-gradient, url($bgImg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
